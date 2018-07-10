@@ -239,6 +239,23 @@ th, td {
 	background-image: url("../img/manager.jpg");
 }
 
+.blink{
+	text-align:center;
+	animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	50%{opacity: .5;}
+	100%{opacity: 1;}
+}
+
+@media (min-width: 992px) {
+	.blink{
+		display:none;
+	}
+}
+
 @media (min-width: 992px) {
 	#text1{
 		vertical-align : bottom;
